@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link type="text/css" href="css/common.css" rel="stylesheet">
+    <link type="text/css" href="css/swiper-3.4.2.min.css" rel="stylesheet">
+    <link type="text/css" href="css/pc.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="js/pc.js"></script>
+</head>
+<body>
+    <!--顶部菜单-->
+    <div class="ke-grid clearfix header-top">
+        <div class="logo fl">
+            <img src="image/logo.png">
+        </div>
+        <ul class="menu fl">
+            <li class="active">
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a href="">公司简介 </a>
+            </li>
+            <li>
+                <a href="">新闻中心</a>
+            </li>
+            <li>
+                <a href="">经营范围</a>
+            </li>
+            <li>
+                <a href="">成功案例</a>
+            </li>
+            <li>
+                <a href="">联系我们</a>
+            </li>
+            <li>
+                <a href="">人才招聘</a>
+            </li>
+        </ul>
+        <div class="search fr">
+            <input placeholder="搜索">
+            <button></button>
+        </div>
+    </div>
+<!--slider-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/banner2.jpg"></div>
+                <div class="swiper-slide"><img src="image/banner2.jpg"></div>
+                <div class="swiper-slide"><img src="image/banner2.jpg"></div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container',{
+            loop: true,
+            pagination : '.pagination',
+            autoplay: 3000,
+        });
+    </script>
+<!--notice-->
+    <div class="swiper-notice ke-grid">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide over">公告1</div>
+            <div class="swiper-slide over">公告2</div>
+            <div class="swiper-slide over">公告3</div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-notice',{
+            loop: true,
+            paginationClickable: true,
+            direction: 'vertical',
+            autoplay: 3500,
+        });
+    </script>
+<!--min信息-->
+    <div class="server ke-grid">
+        <div class="server-name">
+            <img src="image/fwzm-tit.png" alt="服务项目">
+        </div>
+        <ul class="server-list">
+            <li class="server-item-1">
+                <a href="">
+                    <h3 class="over">保洁托管</h3>
+                    <div class="desc over-two">标准化的服务模式、规范化的服务管理、快捷</div>
+                </a>
+            </li>
+            <li class="server-item-2">
+                <a href="">
+                    <h3 class="over">开荒保洁</h3>
+                    <div class="desc over-two">标准化的服务模式、规范化的服务管理、快捷</div>
+                </a>
+            </li>
+            <li class="server-item-3">
+                <a href="">
+                    <h3 class="over">外墙清洗</h3>
+                    <div class="desc over-two">标准化的服务模式、规范化的服务管理、快捷</div>
+                </a>
+            </li>
+            <li class="server-item-4">
+                <a href="">
+                    <h3 class="over">单位保洁</h3>
+                    <div class="desc over-two">标准化的服务模式、规范化的服务管理、快捷</div>
+                </a>
+            </li>
+            <li class="server-item-5">
+                <a href="">
+                    <h3 class="over">地毯清洗</h3>
+                    <div class="desc over-two">标准化的服务模式、规范化的服务管理、快捷</div>
+                </a>
+            </li>
+        </ul>
+        <a class="more" href="">更多服务>></a>
+    </div>
+    <!--detail-->
+    <div class="detail clearfix">
+        <div class="detail-image detail-item">
+            <img src="image/1.jpg">
+        </div>
+        <div class="detail-message detail-item">
+            <div>
+                <img src="image/about-tit.png">
+                <p>
+                    <i>重庆轩逸清洁服务有限公司</i>
+                    成立于2012年4月，注册资金1000万元，具独立法人资格.公司致力于专业的清洁服务领域
+                </p>
+                <p>
+                    主要经营项目有定点保洁、开荒清洁、外墙清洗、玻璃清洗、石材护理、地毯清洗、抽油烟机清洗等综合性清洁服务。重庆轩逸清洁服务有限公司是一家目光远大、
+                    前景广阔、超常规发展的专业化公司，其中高层管理人员5人。技术 骨干15人。公司设有：综合部、业务部、保洁部、工程部、财务部等。
+                </p>
+                <a href="">了解更多>></a>
+            </div>
+        </div>
+    </div>
+    <!--success-->
+    <div class="ke-grid">
+        <div class="success">
+            <div class="success-title">
+                <img src="image/cgal-tit.png">
+            </div>
+            <div class="success-detail ke-grid clearfix">
+                <div class="success-image">
+                    <img src="image/2.png">
+                </div>
+                <ul class="success-item">
+                    <li>
+                        <img src="image/3.jpg">
+                        <div class="success-desc">
+                            <h3 class="over">广安火车站外墙清洗</h3>
+                            <p class="over-two">这里是一小段介绍</p>
+                            <a href="">查看更多</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="image/l3.jpg">
+                        <div class="success-desc">
+                            <h3 class="over">广安火车站外墙清洗</h3>
+                            <p class="over-two">这里是一小段介绍</p>
+                            <a href="">查看更多</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="image/l4.jpg">
+                        <div class="success-desc">
+                            <h3 class="over">广安火车站外墙清洗</h3>
+                            <p class="over-two">这里是一小段介绍</p>
+                            <a href="">查看更多</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="image/2.jpg">
+                        <div class="success-desc">
+                            <h3 class="over">广安火车站外墙清洗</h3>
+                            <p class="over-two">这里是一小段介绍</p>
+                            <a href="">查看更多</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--news-->
+    <div class="news">
+        <div class="ke-grid">
+            <div class="news-top">
+                <img src="image/down.png">
+            </div>
+            <div class="news-title">
+                <img src="image/t3.png">
+            </div>
+            <div class="news-min clearfix">
+                <img class=" fl" src="image/11.png">
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <img src="image/12.png">
+                        <div>
+                            <a class="over" href="">地毯怎么清洗？</a>
+
+                            <p>生活中很多麻烦的时候都可以找到一些方法技巧，清洗地毯也是一样，怎么样才能让地毯清洗得更干净?清洗地毯有没有什么秘诀?下面我们就来看看...</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="image/12.png">
+                        <div>
+                            <a class="over" href="">地毯怎么清洗？</a>
+                            <p>生活中很多麻烦的时候都可以找到一些方法技巧，清洗地毯也是一样，怎么样才能让地毯清洗得更干净?清洗地毯有没有什么秘诀?下面我们就来看看...</p>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="image/12.png">
+                        <div>
+                            <a class="over" href="">地毯怎么清洗？</a>
+                            <p>生活中很多麻烦的时候都可以找到一些方法技巧，清洗地毯也是一样，怎么样才能让地毯清洗得更干净?清洗地毯有没有什么秘诀?下面我们就来看看...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--question-->
+    <div class="question">
+        <div class="ke-grid">
+            <div class="question-title ">
+                <img src="image/ti4.png">
+                <a href="">MORE+</a>
+            </div>
+            <ul class="question-list clearfix">
+                <li>
+                    <a class="question-title over">怎样进行外墙清洗</a>
+                    <div>
+                        <p class="over-two">张贴施工告示，设立施工标志，护栏； 检视清洗方安；关好窗户，
+                            拆除影响情结晶安全和外墙清洗容易受损坏的物件；墙体湿水，确保装饰材料无局部化学腐蚀； 涂抹清洗剂，清水冲洗,轻刮玻璃...
+                        </p>
+                        <p class="over-two">————</p>
+                    </div>
+
+                </li>
+                <li>
+                    <a class="question-title over">怎样进行外墙清洗</a>
+                    <div>
+                        <p class="over-two">张贴施工告示，设立施工标志，护栏； 检视清洗方安；关好窗户，
+                            拆除影响情结晶安全和外墙清洗容易受损坏的物件；墙体湿水，确保装饰材料无局部化学腐蚀； 涂抹清洗剂，清水冲洗,轻刮玻璃...
+                        </p>
+                        <p class="over-two">————</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--company-->
+    <div class="ke-grid">
+        <div class="box">
+            <span class="prev"></span>
+            <dl id="roll">
+                <dd><a href="#"><img src="image/a1.png"/></a></dd>
+                <dd><a href="#"><img src="image/a2.png"/></a></dd>
+                <dd><a href="#"><img src="image/a3.png"/></a></dd>
+                <dd><a href="#"><img src="image/a4.png"/></a></dd>
+                <dd><a href="#"><img src="image/a5.png"/></a></dd>
+                <dd><a href="#"><img src="image/a6.png"/></a></dd>
+                <dd><a href="#"><img src="image/a7.png"/></a></dd>
+            </dl>
+            <span class="next"></span>
+        </div>
+    </div>
+    <!--friends-link-->
+    <div class="ke-grid friends">
+        <div class="friends-link">友情链接</div>
+        <ul>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+            <li>
+                <a href="">友情链接</a>
+            </li>
+        </ul>
+    </div>
+    <!--foot-->
+    <div class="foot clearfix">
+        <div class="ke-grid clearfix">
+            <div class="foot-left">
+                <div class="footer-top">
+                    <a href="">首页</a>/
+                    <a href="">公司简介</a>/
+                    <a href="">新闻中心</a>/
+                    <a href="">经营范围</a>/
+                    <a href="">成功案例</a>/
+                    <a href="">经营范围</a>/
+                    <a href="">联系我们</a>/
+                    <a href="">人才招聘</a>/
+                </div>
+                <ul class="foot-number">
+                    <li>
+                        <img src="image/ddd.png">
+                        <span> 电话：136-9641-9641</span>
+                    </li>
+                    <li>
+                        <img src="image/y.png">
+                        <span>2858570887@qq.com</span>
+                    </li>
+                    <li>
+                        <img src="image/w.png">
+                        <span> 地址：重庆江北区轩逸清洁有限公司</span>
+                    </li>
+                </ul>
+                <p>Copyright © 2017重庆轩逸清洁有限公司 版权所有</p>
+            </div>
+            <img class="code" src="image/wei.png">
+        </div>
+    </div>
+    <!--悬浮-->
+    <div class="index-fixed">
+        <div class="">
+            <a href="">
+                <img src="image/zx.png">
+            </a>
+            <a href="">
+                <img src="image/tel.png">
+            </a>
+            <a class="go-top" href="javascript:;">
+                <img src="image/gotop.png">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
